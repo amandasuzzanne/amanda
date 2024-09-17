@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 180px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px; /* Add space between the navbar-right items */
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-item:hover {
+    color: #d4b9b9;
+}
