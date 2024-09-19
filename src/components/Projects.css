@@ -3,3 +3,35 @@
     align-content: center;
     margin-top: 40px;
 }
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 25px;
+    /* background-color: blue; */
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; /* Space between rows */
+    border-radius: 25px;
+    /* background-color: rgb(255, 0, 55); */
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 100%;
+}
+
+/* Ensure last row is aligned properly if there's an odd number of projects */
+.project-container::after {
+    content: "";
+    width: calc(50% - 10px);
+}
